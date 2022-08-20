@@ -1,0 +1,7 @@
+Nhẹ: 1
+Thấp: 2
+Trung bình: 3
+Cao: 4
+Nặng: 5
+Ít: 6
+Nhiều: 7

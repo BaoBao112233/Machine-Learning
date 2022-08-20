@@ -1,6 +1,3 @@
-# Machine-Learning
-Files tự học ML
-
 Lộ trình Machine Learning / Deep Learning:
 https://www.youtube.com/watch?v=4EouNcl7BI8&list=PLZEIt444jqpBPoqtW2ARJp9ICnF3c7vJC&index=4
 
