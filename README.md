@@ -16,6 +16,8 @@ download matplotlib library
 download pandas library
     pip install pandas
 
+Hind: Nên chạy các files có dùng pandas library trong Command Prompt hoặc PowerShell
+
 Nội dung
 LAB 1
 ('"1 - [ WINDOWS ] Cài đặt môi trường và công cụ trên windows | Tự học machine learning cơ bản
