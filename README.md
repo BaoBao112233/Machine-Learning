@@ -13,14 +13,17 @@ download matplotlib library
     python - m pip install matplotlib
     py -m pip install matplotlib
 
+download pandas library
+    pip install pandas
+
 Nội dung
 LAB 1
-1 - [ WINDOWS ] Cài đặt môi trường và công cụ trên windows | Tự học machine learning cơ bản
+('"1 - [ WINDOWS ] Cài đặt môi trường và công cụ trên windows | Tự học machine learning cơ bản
 2 - [LINUX UBUNTU ] Cài đặt môi trường và công cụ trên linux ubuntu | Tự học machine learning cơ bản
 3 - Bài 1 Hello world với machine learning - Chương trình đầu tiên | Tự học machine learning cơ bản
 4 - Bài 2 Làm quen với numpy | tại sao phải học numpy | Tự học machine learning cơ bản
 5 - Bài 3 Làm quen matplotlib | tại sao phải học matplotlib | Tự học machine learning cơ bản
-6 - Bài 4 Dataset và kiểm tra độ chính xác dự đoán | Tự học machine learning cơ bản
+"')6 - Bài 4 Dataset và kiểm tra độ chính xác dự đoán | Tự học machine learning cơ bản
 7 - Bài 5 pandas với csv dataset | tự học machine learning cơ bản
 8 - Bài 6 Xử lý Missing values trong scikit learn | Tự học machine learning cơ bản
 9 - Linear Regression Hồi quy tuyến tính cơ bản Phần 1 | Tự học machine learning cơ bản
