@@ -16,7 +16,13 @@ download matplotlib library
 download pandas library
     pip install pandas
 
-Hind: Nên chạy các files có dùng pandas library trong Command Prompt hoặc PowerShell
+download jupyter notebook
+    pip install notebook
+    Dùng Anaconda để tải: https://www.anaconda.com/products/distribution/download-success-pythonanywhere
+
+
+Hint: Nên chạy các files có dùng pandas library trong Command Prompt hoặc PowerShell
+      Có thể dùng Microsoft Excel để có thể tạo và sửa file .csv
 
 Nội dung
 LAB 1
