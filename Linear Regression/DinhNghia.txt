@@ -1,0 +1,44 @@
+Hồi quy tuyến tính là 1 thuật toán học có giám sát, trong đó đầu ra dự đoán là liên tục và có độ dốc là không đổi
+Được sử dụng để dự đoán các giá trị trong 1 phạm vi liên tục
+Có 2 loại chính:
+    - Simple Regression
+    - Multivariable Regression
+
+* Simple Regression giống như 1 phương trình đường thẳng mà đã từng học ở C2, C3
+                            y = ax + b
+    Trong đó các biến a, b mà ta học dùng để mỗi khi ta input 1 giá trị x thì ta nhận được output là giá trị y
+
+    + Tạo 1 dự đoán 
+        Radio: Biến độc lập. Trong machine learning gọi là feature
+        Weight: Hệ số biến độc lập. Trong machine learning gọi là Weight
+        Bias: giá trị lệch cso thể bì đắp những sai số
+        =>      Sales = Weight * Radio + Bias
+    => Kết quả cần đạt được 
+        Tìm được Weight và Bias để có được 1 đường thẳng phù hợp nhất cho tập dữ liệu
+    + Cost function (Hàm chi phí)
+        Để tối ưu hóa Weight
+
+        Hàm lỗi MSE (meansures squared error) đo sự sai khác = cách lấy TRUNG BÌNH BÌNH PHƯƠNG giữa giá trị dự đoán và giá trị thực tế (MSE-function.png)
+        N là số điểm dữ liệu, số điểm giá trị, số sample
+        a(xi) + b: Giá trị dự đoán
+        yi: giá trị thực tế
+
+        Đầu ra luôn là 1 số duy nhất thể hiện chi phí của các tập trong số (Weight) hiện tại 
+        Mục tiêu là tối thiểu MSE để tăng độ chính xác hiện tại
+
+    + Gradient descent: để xác định chi phí
+        Điển local minimum là điểm có đạo hàm: f'(x) = 0
+        Đạo hàm phía biên trái local minimum là không dương, và bên phải là không âm.
+        Với Max thì ngược lại 
+
+        Để tối ưu hàm chi phí chúng ta còn tính lại Weight và Bias mới tối ưu hơn
+        Chúng ta thực hiện việc tính Weight mới và Bias mới = cách laasy Weight và Bias hiện tại - (tính Weight và Bias với mối điểm dữ liệu rồi lấy trung bình của tất cả các điểm dữ liệu sau đó nhân với learning rate (Tốc độ học))
+
+        Chúng ta có thể tính độ dốc cảu hàm chi phí này = đạo hàm của MSE (MSE-function(Derivative).png)
+
+        Training:
+        Đào tạo, training 1 model là quá trình lập đi lập lại để cải thiện phương trình dự đoán = cách lập qua tapapj dữ liệu nhiều lần
+
+        update ;ại weight và Bias với Gradient descent
+
+        Việc training kết thúc khi đại đến ngưỡng lối chấp nhận được hoặc lần lập tiếp theo không thể giảm được chi phí

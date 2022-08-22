@@ -21,7 +21,7 @@ download jupyter notebook
     Dùng Anaconda để tải: https://www.anaconda.com/products/distribution/download-success-pythonanywhere
 
 
-Hint: Nên chạy các files có dùng pandas library trong Command Prompt hoặc PowerShell
+Hint: Nên chạy các files có dùng pandas library trong Command Prompt hoặc PowerShell, terminal của Pycham
       Có thể dùng Microsoft Excel để có thể tạo và sửa file .csv
 
 Nội dung
