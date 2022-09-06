@@ -1,3 +1,4 @@
+from cProfile import label
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -35,15 +36,17 @@ def update_weight(arrayX, arrayY, weight, bias, learning_rate):
 
 def train(arrayX, arrayY, weight, bias, learning_rate, times): #times: số lần lập
     save_his = []
+    save_wei = []
     for i in range(times):
         weight, bias = update_weight(arrayX, arrayY, weight, bias, learning_rate)
         cost = cost_function(arrayX, arrayY, weight, bias)
         save_his.append(cost)
+        save_wei.append(weight)
     
-    return weight, bias, save_his
+    return weight, bias, save_his, save_wei
 
 
-weight, bias, history = train(X, Y, 0.03, 0.0014, 0.0001, 60)
+weight, bias, history, save_W = train(X, Y, 0.03, 0.0014, 0.0001, 60)
 # print("Result:")
 # print(weight)
 # print(bias)
@@ -53,10 +56,32 @@ weight, bias, history = train(X, Y, 0.03, 0.0014, 0.0001, 60)
 
 times = [i for i in range(60)]
 
-plt.plot(times, history)
-plt.show()
+# plt.plot(times, history)
+# plt.xlabel("Time")
+# plt.ylabel("Cost")
+# plt.show()
 
 # print(X)
 # print(Y)
 
 # print(dataFrame)
+
+# plt.plot(times, save_W)
+# plt.xlabel("Time")
+# plt.ylabel("Weight")
+# plt.show()
+
+# plt.plot(save_W, history)
+# plt.xlabel("Weight")
+# plt.ylabel("Cost")
+# plt.show()
+
+pre = []
+for i in range(len(X)):
+    pre.append(predict(X[i],weight,bias))
+# plt.plot(predict(X,weight,bias), label='predict')
+plt.plot(X,pre,'g-',label="predict")
+for i in range(len(X)):
+    # plt.plot(X[i],predict(X[i],weight,bias),'go-', label='predict')
+    plt.plot(X[i],Y[i],'bo-',label='Fact')
+plt.show()
